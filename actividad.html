@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1</title>
+    <style>
+        h5 {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 10px;
+        }
+
+        h4 {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 1px;
+        }
+
+        .form-header {
+            margin-bottom: 20px;
+        }
+
+        .form-header label {
+            font-weight: bold;
+        }
+
+        .input-field {
+            padding: 8px;
+            box-sizing: border-box;
+            margin-right: 10px;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-footer p {
+            margin: 5px 0;
+        }
+
+        .checkbox-group {
+            text-align: left;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <img src="https://servicios.registromercantil.gob.gt/formatoSolicitudes/Assets/logo-rm-wide-sm-2.png" alt="logo"
+            width="200px" height="50px">
+    </figure>
+    <h5>Este formulario de solicitud es GRATUITO, PROHIBIDO su venta</h5>
+    <h4>SOLICITUD DE INSCRIPCION DE COMERCIANTE INDIVIDUAL Y EMPRESA</h4>
+    <h6>Registro Mercantil</h6>
+
+    <fieldset>
+        <form>
+            <div class="form-header">
+                <label for="numero_formato">Número de Formato:</label>
+                <input type="text" id="numero_formato" name="numero_formato" class="input-field">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" class="input-field">
+            </div>
+            <tfoot>
+                <table border="title" title="tabla de pruebas colspan y rowspan">
+                    <tbody>
+                        <tr>
+                            <td colspan="2">Primer Nombre</td>
+                            <td><input type="text" size="45" name="primer_apellido"></td>
+                            <td colspan="2">Segundo Nombre</td>
+                            <td><input type="text" size="45" name="segundo_apellido"></td>
+                            <td colspan="2">Otro Nombre</td>
+                            <td><input type="text" size="45" name="apellido_casado"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Primer Apellido</td>
+                            <td><input type="text" size="45" name="primer_apellido"></td>
+                            <td colspan="2">Segundo Apellido</td>
+                            <td><input type="text" size="45" name="segundo_apellido"></td>
+                            <td colspan="2">Apellido Casado</td>
+                            <td><input type="text" size="45" name="apellido_casado"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Fecha de Nacimiento</td>
+                            <td><input type="date" id="fecha_nacimiento" name="fecha_nacimiento"></td>
+                            <td colspan="2">Estado Civil</td>
+                            <td>
+                                <select name="estado_civil" id="estado_civil">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Soltero(a)</option>
+                                    <option value="2">Casado(a)</option>
+                                </select>
+                            </td>
+                            <td colspan="2">Nacionalidad</td>
+                            <td><input type="text" size="45" name="nacionalidad"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Ocupacion</td>
+                            <td><input type="text" size="45" name="ocupacion"></td>
+                            <td colspan="2">Departamento</td>
+                            <td><input type="text" size="45" name="departamento"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Residencia</td>
+                            <td><input type="text" size="45" name="residencia"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Nit</td>
+                            <td><input type="text" size="45" name="nit"></td>
+                            <td colspan="2">No de Telefono</td>
+                            <td><input type="text" size="45" name="telefono"></td>
+                            <td colspan="2">Correo Electrónico</td>
+                            <td><input type="text" size="45" name="Correo"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </tfoot>
+            <div class="form-footer">
+                <p>Atentamente,</p>
+                <p>PIDO:</p>
+            </div>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="opcion 1" value="opcion1"> Que se me inscriba como comerciante individual
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="opcion 2" value="opcion2"> Que se inscriba la siguiente empresa de mi propiedad o Propiedad de:
+                </label>
+                <p>Nombre de Comercial:</p>
+                <p><input type="text" size="200%" name="primer_apellido"></p>
+                <p>Dirección Completa:</p>
+                <p><input type="text" size="200%" name="primer_apellido"></p>
+            </div>
+            <div class="form-footer">
+                <p>Objeto:</p>
+            </div>
+            <div>
+                
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
+
